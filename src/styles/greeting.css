@@ -1,0 +1,32 @@
+.greeting-wrapper {
+  background-image: url(../assets/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+
+.greeting-card {
+  max-width: 35rem;
+  background-color: hsla(0, 0%, 100%, 0.437) !important;
+  color: #b22c23 !important;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 15rem !important;
+  margin-left: 5rem;
+  border: none !important;
+}
+
+.card-header {
+  border-bottom: none !important;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-weight: 500;
+  font-family: "bitter" !important;
+}
