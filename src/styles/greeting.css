@@ -20,6 +20,7 @@
 
 .card-header {
   border-bottom: none !important;
+  background-color: transparent !important;
 }
 
 .card-title {

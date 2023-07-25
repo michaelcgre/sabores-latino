@@ -7,11 +7,15 @@ import "@fontsource/bitter";
 import "@fontsource/bitter/600.css";
 import "@fontsource/raleway";
 import "@fontsource/raleway/500.css";
+import { Provider } from "react-redux";
+import { store } from "/store.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );

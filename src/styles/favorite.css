@@ -1,0 +1,16 @@
+.favorite-wrapper {
+  background-image: url("../assets/birria.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40rem;
+  margin-top: 5rem;
+}
+
+.favorite-card {
+  margin-bottom: 5rem;
+  color: #b22c23 !important;
+  padding: 1rem;
+  outline: 3px solid #537150;
+  outline-offset: -1rem;
+}
