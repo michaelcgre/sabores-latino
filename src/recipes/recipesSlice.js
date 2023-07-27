@@ -55,3 +55,10 @@ export const selectFavoriteRecipes = (state) => {
   );
   return favoriteRecipes;
 };
+
+export const selectWeeklyRecipes = (state) => {
+  const weeklyRecipes = state.recipes.recipesArray.filter(
+    (recipe) => recipe.isWeekly === true
+  );
+  return weeklyRecipes;
+};

@@ -11,3 +11,23 @@ a {
 p {
   font-family: "raleway", sans-serif;
 }
+
+a {
+  font-weight: 600 !important;
+}
+
+.arrow-icon {
+  margin-left: 0.5rem;
+}
+
+.clock-icon {
+  margin-right: 0.5rem;
+}
+
+.recipe-type-title {
+  color: #b22c23;
+}
+.recipe-type-title:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}

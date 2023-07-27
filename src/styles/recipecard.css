@@ -1,0 +1,22 @@
+.recipe-card {
+  width: 22rem !important;
+  height: 30rem !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+.recipe-card-img {
+  height: 15rem !important;
+  object-fit: cover;
+}
+
+.recipe-link:hover .recipe-card {
+  border-left: 10px solid #537150;
+  border-bottom: 10px solid #537150;
+}
+
+.recipe-link:hover .btn {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #537150;
+}

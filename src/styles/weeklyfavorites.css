@@ -1,0 +1,33 @@
+.favorites-wrapper {
+  height: 40rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin-top: 2rem;
+}
+
+.favorites-title {
+  color: #b22c23;
+}
+
+.favorites-card {
+  height: 13rem !important;
+  margin-bottom: 1rem;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+.recipe-img {
+  height: 12.7rem !important;
+  width: 10rem !important;
+}
+
+.favorites-link:hover .btn {
+  text-decoration: underline;
+  text-decoration-color: #537150;
+  text-decoration-thickness: 2px;
+}
+
+.favorites-link:hover .favorites-card {
+  border-left: 5px solid #537150;
+  border-bottom: 5px solid #537150;
+}

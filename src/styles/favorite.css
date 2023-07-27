@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 40rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .favorite-card {
@@ -13,4 +13,11 @@
   padding: 1rem;
   outline: 3px solid #537150;
   outline-offset: -1rem;
+}
+
+.favorite-link:hover .btn {
+  text-decoration: underline;
+  text-decoration-color: #537150;
+  text-decoration-thickness: 2px;
+  color: #212529;
 }

@@ -1,4 +1,5 @@
 import BeefEmpanadas from "../assets/beefempanada.jpg";
+import BeefEmpanadasSmall from "../assets/beefempanada(1).jpg";
 import HomemadeSalsa from "../assets/salsa.jpg";
 import HomemadeQueso from "../assets/queso.jpg";
 import SalsaVerde from "../assets/salsaverde.jpg";
@@ -7,20 +8,24 @@ import StreetTaco from "../assets/streettaco.jpg";
 import Tamales from "../assets/tamales.jpg";
 import Birria from "../assets/birria.jpg";
 import Gorditas from "../assets/gorditas.jpg";
+import GorditasSmall from "../assets/gorditas(1).jpg";
 import QuesoFundido from "../assets/quesofundido.jpg";
 import ConchaBread from "../assets/conchabread.jpg";
 import Churros from "../assets/churros.jpg";
 import MargaritaTart from "../assets/margaritatart.jpg";
 import Chocoflan from "../assets/chocoflan.jpg";
+import ChocoflanSmall from "../assets/chocoflan(1).jpg";
 import TresLeches from "../assets/tresleches.jpg";
 import Champurrado from "../assets/champurrado.jpg";
 import Margarita from "../assets/margarita.jpg";
 import Horchata from "../assets/horchata.jpg";
 import AquaDeJamaica from "../assets/aguadejamaica.jpg";
 import AquasFrescas from "../assets/aguafresca.jpg";
+import AquasFrescasSmall from "../assets/aguafresca(1).jpg";
 import Nachos from "../assets/nachos.jpg";
 import Taquitos from "../assets/taquitos.jpg";
 import FritoPie from "../assets/fritopie.jpg";
+import FritoPieSmall from "../assets/fritopie(1).jpg";
 import Enchiladas from "../assets/enchiladas.jpg";
 import Tacos from "../assets/tacos.jpg";
 
@@ -28,6 +33,7 @@ export const recipes = [
   {
     id: 1,
     img: BeefEmpanadas,
+    imgSmall: BeefEmpanadasSmall,
     title: "Beef Empanadas",
     description:
       "A delicious Latin American pastry filled with seasoned ground beef, olives, and raisins.",
@@ -77,6 +83,8 @@ export const recipes = [
     ],
     recipeType: "appetizer",
     isFavorite: false,
+    isWeekly: true,
+    time: "90 min",
   },
   {
     id: 2,
@@ -103,6 +111,8 @@ export const recipes = [
     ],
     recipeType: "appetizer",
     isFavorite: false,
+    isWeekly: false,
+    time: "30 min",
   },
   {
     id: 3,
@@ -132,6 +142,8 @@ export const recipes = [
     ],
     recipeType: "appetizer",
     isFavorite: false,
+    isWeekly: false,
+    time: "45 min",
   },
   {
     id: 4,
@@ -163,6 +175,8 @@ export const recipes = [
     ],
     recipeType: "appetizer",
     isFavorite: false,
+    isWeekly: false,
+    time: "20 min",
   },
   {
     id: 5,
@@ -194,6 +208,8 @@ export const recipes = [
     ],
     recipeType: "appetizer",
     isFavorite: false,
+    isWeekly: false,
+    time: "60 min",
   },
   {
     id: 6,
@@ -228,6 +244,8 @@ export const recipes = [
     ],
     recipeType: "dishes",
     isFavorite: false,
+    isWeekly: false,
+    time: "45 min",
   },
   {
     id: 7,
@@ -262,6 +280,8 @@ export const recipes = [
     ],
     recipeType: "dishes",
     isFavorite: false,
+    isWeekly: false,
+    time: "4 hrs",
   },
   {
     id: 8,
@@ -299,10 +319,13 @@ export const recipes = [
     ],
     recipeType: "dishes",
     isFavorite: true,
+    isWeekly: false,
+    time: "4 hrs",
   },
   {
     id: 9,
     img: Gorditas,
+    imgSmall: GorditasSmall,
     title: "Gorditas",
     description:
       "Thick and soft corn cakes stuffed with savory fillings, a popular Mexican street food.",
@@ -330,6 +353,8 @@ export const recipes = [
     ],
     recipeType: "dishes",
     isFavorite: false,
+    isWeekly: true,
+    time: "60 min",
   },
   {
     id: 10,
@@ -359,6 +384,8 @@ export const recipes = [
     ],
     recipeType: "dishes",
     isFavorite: false,
+    isWeekly: false,
+    time: "30 min",
   },
   {
     id: 11,
@@ -404,6 +431,8 @@ export const recipes = [
     ],
     recipeType: "desserts",
     isFavorite: false,
+    isWeekly: false,
+    time: "4 hrs",
   },
   {
     id: 12,
@@ -441,6 +470,8 @@ export const recipes = [
     ],
     recipeType: "desserts",
     isFavorite: false,
+    isWeekly: false,
+    time: "45 min",
   },
   {
     id: 13,
@@ -477,10 +508,13 @@ export const recipes = [
     ],
     recipeType: "desserts",
     isFavorite: false,
+    isWeekly: false,
+    time: "90 min",
   },
   {
     id: 14,
     img: Chocoflan,
+    imgSmall: ChocoflanSmall,
     title: "Chocoflan",
     description:
       "A luscious and decadent dessert that combines chocolate cake and creamy flan.",
@@ -520,6 +554,8 @@ export const recipes = [
     ],
     recipeType: "desserts",
     isFavorite: false,
+    isWeekly: true,
+    time: "90 min",
   },
   {
     id: 15,
@@ -568,6 +604,8 @@ export const recipes = [
     ],
     recipeType: "desserts",
     isFavorite: false,
+    isWeekly: false,
+    time: "2 hrs",
   },
   {
     id: 16,
@@ -596,6 +634,8 @@ export const recipes = [
     ],
     recipeType: "drinks",
     isFavorite: false,
+    isWeekly: false,
+    time: "30 min",
   },
   {
     id: 17,
@@ -622,6 +662,8 @@ export const recipes = [
     ],
     recipeType: "drinks",
     isFavorite: false,
+    isWeekly: false,
+    time: "15 min",
   },
   {
     id: 18,
@@ -651,6 +693,8 @@ export const recipes = [
     ],
     recipeType: "drinks",
     isFavorite: false,
+    isWeekly: false,
+    time: "45 min",
   },
   {
     id: 19,
@@ -681,10 +725,13 @@ export const recipes = [
     ],
     recipeType: "drinks",
     isFavorite: false,
+    isWeekly: false,
+    time: "45 min",
   },
   {
     id: 20,
     img: AquasFrescas,
+    imgSmall: AquasFrescasSmall,
     title: "Aguas Frescas",
     description:
       "A variety of fresh fruit-based drinks that are both hydrating and flavorful.",
@@ -720,6 +767,8 @@ export const recipes = [
     ],
     recipeType: "drinks",
     isFavorite: false,
+    isWeekly: true,
+    time: "30 min",
   },
   {
     id: 21,
@@ -750,13 +799,15 @@ export const recipes = [
     ],
     recipeType: "texmex",
     isFavorite: false,
+    isWeekly: false,
+    time: "30 min",
   },
   {
     id: 22,
     img: Taquitos,
     title: "Taquitos",
     description:
-      "Crispy rolled tortillas filled with seasoned meat and cheese, perfect for dipping.",
+      "Crispy rolled tortillas that are filled with seasoned meat and cheese, perfect for dipping.",
     ingredients: [
       "Corn tortillas",
       "2 cups cooked and seasoned shredded chicken or beef",
@@ -781,10 +832,13 @@ export const recipes = [
     ],
     recipeType: "texmex",
     isFavorite: false,
+    isWeekly: false,
+    time: "45 min",
   },
   {
     id: 23,
     img: FritoPie,
+    imgSmall: FritoPieSmall,
     title: "Frito Pie",
     description:
       "A hearty and flavorful Tex-Mex dish, featuring Fritos topped with chili and cheese.",
@@ -809,6 +863,8 @@ export const recipes = [
     ],
     recipeType: "texmex",
     isFavorite: false,
+    isWeekly: true,
+    time: "30 min",
   },
   {
     id: 24,
@@ -843,6 +899,8 @@ export const recipes = [
     ],
     recipeType: "texmex",
     isFavorite: false,
+    isWeekly: false,
+    time: "45 min",
   },
   {
     id: 25,
@@ -875,5 +933,7 @@ export const recipes = [
     ],
     recipeType: "texmex",
     isFavorite: false,
+    isWeekly: false,
+    time: "30 min",
   },
 ];
