@@ -1,0 +1,21 @@
+.footer-wrapper {
+  background-color: #537150;
+}
+
+.footer-icon:hover,
+.footer-link:hover {
+  color: #16191b !important;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-icon,
+.footer-link {
+  color: #212529 !important;
+}
+
+.footer-title {
+  color: #b22c23;
+}

@@ -18,7 +18,7 @@ const RecipeCard = ({ recipe }) => {
       to={`/recipes/${recipe.id}`}
       className="text-decoration-none recipe-link"
     >
-      <Card className="recipe-card mt-4">
+      <Card className="recipe-card mt-5 border-round">
         <CardImg
           top
           src={recipe.img}

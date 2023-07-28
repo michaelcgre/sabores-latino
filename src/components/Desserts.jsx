@@ -18,11 +18,11 @@ const Desserts = () => {
     <Container>
       <Row>
         <Col>
-          <Link to="/recipes" className="text-decoration-none">
-            <h2 className="text-center fs-1 my-3 recipe-type-title">
+          <Link to="/desserts" className="text-decoration-none">
+            <h3 className="text-center fs-1 my-3 recipe-type-title">
               A Fusion of Cultures{" "}
               <FontAwesomeIcon className="icon" icon={faArrowRight} />
-            </h2>
+            </h3>
           </Link>
         </Col>
       </Row>
