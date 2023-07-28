@@ -23,7 +23,7 @@ const RecipeCard = ({ recipe }) => {
           top
           src={recipe.img}
           alt={recipe.title}
-          className="img-fluid recipe-card-img rounded-0"
+          className="img-fluid recipe-card-img rounded-0 rounded-top"
         />
         <div>
           <CardHeader>

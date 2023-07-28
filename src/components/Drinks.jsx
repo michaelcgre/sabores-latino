@@ -20,8 +20,7 @@ const Drinks = () => {
         <Col>
           <Link to="/drinks" className="text-decoration-none">
             <h3 className="text-center fs-1 my-3 recipe-type-title">
-              A Fusion of Cultures{" "}
-              <FontAwesomeIcon className="icon" icon={faArrowRight} />
+              Cheers! <FontAwesomeIcon className="icon" icon={faArrowRight} />
             </h3>
           </Link>
         </Col>
