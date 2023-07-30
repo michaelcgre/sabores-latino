@@ -9,7 +9,7 @@ import Desserts from "../components/Desserts";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="home-wrapper">
       <Greeting />
       <div className="favorite-favorites-wrapper">
         <Container>
@@ -26,7 +26,7 @@ const HomePage = () => {
         <Drinks />
         <Desserts />
       </div>
-    </>
+    </div>
   );
 };
 

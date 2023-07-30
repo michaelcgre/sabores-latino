@@ -4,6 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 30rem;
+  margin-top: 2rem;
 }
 
 .greeting-card {
@@ -30,4 +31,11 @@
 .card-text {
   font-weight: 500;
   font-family: "bitter" !important;
+}
+
+@media (max-width: 718px) {
+  .greeting-card {
+    margin: 0 auto;
+    text-align: center;
+  }
 }

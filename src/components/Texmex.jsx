@@ -15,11 +15,11 @@ const Texmex = () => {
   }
 
   return (
-    <Container>
+    <Container className="mt-5">
       <Row>
         <Col>
           <Link to="/texmex" className="text-decoration-none">
-            <h3 className="text-center fs-1 my-3 recipe-type-title">
+            <h3 className="text-center fs-1 mt-3 recipe-type-title">
               A Fusion of Cultures{" "}
               <FontAwesomeIcon className="icon" icon={faArrowRight} />
             </h3>

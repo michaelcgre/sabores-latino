@@ -24,10 +24,15 @@ a {
   margin-right: 0.5rem;
 }
 
-.recipe-type-title {
+.recipe-type-title,
+.category-title {
   color: #b22c23;
 }
 .recipe-type-title:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
+}
+
+.App {
+  background-color: rgb(249, 232, 215);
 }

@@ -7,8 +7,8 @@ const TexmexPage = () => {
   const texmexRecipes = useSelector(selectTexmexRecipes);
 
   return (
-    <Container>
-      <h1 className="text-center">TexMex</h1>
+    <Container className="my-5">
+      <h1 className="text-center fw-bold category-title">TexMex</h1>
       <Row>
         {texmexRecipes.map((recipe) => (
           <Col

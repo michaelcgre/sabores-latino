@@ -11,7 +11,7 @@ import FooterLogo from "../assets/Footer-logo.png";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper mt-5 py-4">
+    <div className="footer-wrapper py-4">
       <Container>
         <Row>
           <Col
@@ -29,7 +29,9 @@ const Footer = () => {
           </Col>
 
           <Col xs={12} md={4}>
-            <h4 className="fs-2 text-center footer-title">Navigation</h4>
+            <h4 className="fs-2 text-center footer-title fw-bold">
+              Navigation
+            </h4>
             <Nav className="d-flex justify-content-center align-items-center text-center mt-3">
               <div>
                 <NavItem>
@@ -62,8 +64,7 @@ const Footer = () => {
               </div>
             </Nav>
           </Col>
-          <Col className="d-flex justify-content-center align-items-center flex-column">
-            <h4 className="fs-2 footer-title">Follow us : </h4>
+          <Col className="d-flex justify-content-center align-items-center flex-column mt-4 mt-md-0">
             <div className="d-flex justify-content-center align-items-center fs-2 gap-4 mt-3">
               <a href="/" className="footer-icon">
                 <FontAwesomeIcon icon={faFacebook} />

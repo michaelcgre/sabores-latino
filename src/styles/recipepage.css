@@ -1,0 +1,16 @@
+.recipe-page-titles {
+  color: #b22c23;
+  font-weight: 600;
+}
+
+.recipe-image {
+  height: 35em !important;
+  width: 40rem !important;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .recipe-image {
+    height: 20em !important;
+  }
+}

@@ -7,8 +7,8 @@ const DrinksPage = () => {
   const drinkRecipes = useSelector(selectDrinkRecipes);
 
   return (
-    <Container>
-      <h1 className="text-center">Drinks</h1>
+    <Container className="my-5">
+      <h1 className="text-center fw-bold category-title">Drinks</h1>
       <Row>
         {drinkRecipes.map((recipe) => (
           <Col

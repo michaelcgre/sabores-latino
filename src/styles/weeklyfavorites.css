@@ -31,3 +31,14 @@
   border-left: 5px solid #537150;
   border-bottom: 5px solid #537150;
 }
+
+@media (max-width: 448px) {
+  .favorites-card {
+    height: 22rem !important;
+  }
+
+  .recipe-img {
+    height: 21.7rem !important;
+    object-fit: cover;
+  }
+}

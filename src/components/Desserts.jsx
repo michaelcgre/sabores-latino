@@ -15,11 +15,11 @@ const Desserts = () => {
   }
 
   return (
-    <Container>
+    <Container className="pb-5 mt-5">
       <Row>
         <Col>
           <Link to="/desserts" className="text-decoration-none">
-            <h3 className="text-center fs-1 my-3 recipe-type-title">
+            <h3 className="text-center fs-1 mt-3 recipe-type-title">
               Still Hungry?{" "}
               <FontAwesomeIcon className="icon" icon={faArrowRight} />
             </h3>
