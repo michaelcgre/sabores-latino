@@ -5,33 +5,10 @@ import { selectDrinkRecipes } from "../recipes/recipesSlice";
 import RecipeCard from "../recipes/RecipeCard";
 import { useSelector } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
-import { animated, useSpring } from "react-spring";
-import { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 
 const Drinks = () => {
   const drinkRecipes = useSelector(selectDrinkRecipes);
   const firstThreeRecipes = drinkRecipes.slice(0, 3);
-
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      setTimeout(() => {
-        setToggle(true);
-      }, 100);
-    }
-  }, [inView]);
-
-  const [toggle, setToggle] = useState(false);
-
-  const fade = useSpring({
-    opacity: toggle ? 1 : 0,
-    config: { duration: 1500 },
-  });
 
   if (!drinkRecipes) {
     return <div>No recipes found!</div>;
@@ -49,14 +26,12 @@ const Drinks = () => {
         </Col>
       </Row>
       <Row>
-        {firstThreeRecipes.map((recipe, index) => (
+        {firstThreeRecipes.map((recipe) => (
           <Col
             key={recipe.id}
             className="d-flex justify-content-around align-items-center"
           >
-            <animated.div style={fade} ref={index === 0 ? ref : undefined}>
-              <RecipeCard key={recipe.id} recipe={recipe} />
-            </animated.div>
+            <RecipeCard key={recipe.id} recipe={recipe} />
           </Col>
         ))}
       </Row>
