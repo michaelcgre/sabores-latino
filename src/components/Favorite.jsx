@@ -25,10 +25,10 @@ const Favorite = () => {
           </CardHeader>
           <CardBody>
             <CardText>{favoriteRecipe.description}</CardText>
-            <a href="/" className="btn">
+            <button className="btn fw-bold">
               Make now!
-              <FontAwesomeIcon className="icon" icon={faArrowRight} />
-            </a>
+              <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} />
+            </button>
           </CardBody>
         </Card>
       </Link>

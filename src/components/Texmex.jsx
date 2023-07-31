@@ -5,10 +5,30 @@ import { selectTexmexRecipes } from "../recipes/recipesSlice";
 import RecipeCard from "../recipes/RecipeCard";
 import { useSelector } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
+import { animated, useSpring } from "react-spring";
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const Texmex = () => {
   const texmexRecipes = useSelector(selectTexmexRecipes);
   const firstThreeRecipes = texmexRecipes.slice(0, 3);
+
+  const [toggle, setToggle] = useState(false);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const fade = useSpring({
+    opacity: toggle ? 1 : 0,
+    config: { duration: 1000 },
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setToggle(true);
+    }
+  }, [inView]);
 
   if (!texmexRecipes) {
     return <div>No recipes found!</div>;
@@ -19,7 +39,7 @@ const Texmex = () => {
       <Row>
         <Col>
           <Link to="/texmex" className="text-decoration-none">
-            <h3 className="text-center fs-1 mt-3 recipe-type-title">
+            <h3 className="text-center fs-1 mt-3 fw-bold recipe-type-title">
               A Fusion of Cultures{" "}
               <FontAwesomeIcon className="icon" icon={faArrowRight} />
             </h3>
@@ -32,7 +52,9 @@ const Texmex = () => {
             key={recipe.id}
             className="d-flex justify-content-around align-items-center"
           >
-            <RecipeCard key={recipe.id} recipe={recipe} />
+            <animated.div style={fade} ref={ref}>
+              <RecipeCard key={recipe.id} recipe={recipe} />
+            </animated.div>
           </Col>
         ))}
       </Row>

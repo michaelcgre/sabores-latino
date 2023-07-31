@@ -19,7 +19,9 @@ const YouMightLike = ({ currentRecipeId }) => {
 
   return (
     <div className="mt-4 mb-5">
-      <h2 className="text-center mb-4">You Might Like:</h2>
+      <h2 className="text-center mb-4 fw-bold might-like-title">
+        You Might Like:
+      </h2>
       <div className="card-container d-flex justify-content-around align-items-center flex-column flex-xl-row">
         {randomIndexes.map((index) => {
           const recipe = recipes[index];

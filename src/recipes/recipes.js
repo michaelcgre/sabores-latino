@@ -36,7 +36,7 @@ export const recipes = [
     imgSmall: BeefEmpanadasSmall,
     title: "Beef Empanadas",
     description:
-      "A delicious Latin American pastry filled with seasoned ground beef, olives, and raisins.",
+      "A delicious Latin American pastry filled with seasoned ground beef.",
     ingredients: [
       "2 1/2 cups all-purpose flour",
       "1/2 teaspoon salt",
@@ -214,7 +214,7 @@ export const recipes = [
   {
     id: 6,
     img: StreetTaco,
-    title: "Carne Asada Street Tacos",
+    title: "Street Tacos",
     description:
       "Delicious and tender grilled beef served in warm corn tortillas with fresh toppings.",
     ingredients: [
@@ -287,8 +287,7 @@ export const recipes = [
     id: 8,
     img: Birria,
     title: "Birria",
-    description:
-      "A flavorful Mexican stew made with tender meat and spices, often served in tacos.",
+    description: "A flavorful Mexican stew made with tender meat and spices.",
     ingredients: [
       "3 lbs beef chuck roast or goat meat, cut into chunks",
       "1/2 onion, chopped",
@@ -328,7 +327,7 @@ export const recipes = [
     imgSmall: GorditasSmall,
     title: "Gorditas",
     description:
-      "Thick and soft corn cakes stuffed with savory fillings, a popular Mexican street food.",
+      "Thick and soft corn cakes stuffed with savory fillings and beef or chicken.",
     ingredients: [
       "2 cups masa harina",
       "1 1/4 cups warm water",
@@ -361,7 +360,7 @@ export const recipes = [
     img: QuesoFundido,
     title: "Queso Fundido",
     description:
-      "A gooey and indulgent melted cheese dish, often flavored with chorizo or mushrooms.",
+      "A gooey and indulgent melted cheese dish, often flavored with chorizo.",
     ingredients: [
       "2 cups shredded Oaxaca cheese or Monterey Jack cheese",
       "1/2 cup crumbled queso fresco",
@@ -517,7 +516,7 @@ export const recipes = [
     imgSmall: ChocoflanSmall,
     title: "Chocoflan",
     description:
-      "A luscious and decadent dessert that combines chocolate cake and creamy flan.",
+      "A luscious dessert that combines chocolate cake and creamy flan.",
     ingredients: [
       "For the flan layer:",
       "1 can (14 oz) sweetened condensed milk",
@@ -561,8 +560,7 @@ export const recipes = [
     id: 15,
     img: TresLeches,
     title: "Tres Leches Cake",
-    description:
-      "A moist and milky sponge cake soaked in three kinds of milk and topped with whipped cream.",
+    description: "A moist and milky sponge cake soaked in three kinds of milk.",
     ingredients: [
       "1 cup all-purpose flour",
       "1 1/2 teaspoons baking powder",
@@ -612,7 +610,7 @@ export const recipes = [
     img: Champurrado,
     title: "Champurrado",
     description:
-      "A comforting and chocolatey Mexican drink made with masa harina and piloncillo.",
+      "A comforting and chocolatey Mexican drink made with masa harina.",
     ingredients: [
       "2 cups water",
       "1 cinnamon stick",
@@ -775,7 +773,7 @@ export const recipes = [
     img: Nachos,
     title: "Nachos",
     description:
-      "A Tex-Mex classic, featuring tortilla chips topped with melted cheese and various toppings.",
+      "A Tex-Mex classic, featuring tortilla chips topped with melted cheese.",
     ingredients: [
       "Tortilla chips",
       "2 cups shredded cheddar or Monterey Jack cheese",
@@ -807,7 +805,7 @@ export const recipes = [
     img: Taquitos,
     title: "Taquitos",
     description:
-      "Crispy rolled tortillas that are filled with seasoned meat and cheese, perfect for dipping.",
+      "Crispy rolled tortillas that are filled with seasoned meat and cheese.",
     ingredients: [
       "Corn tortillas",
       "2 cups cooked and seasoned shredded chicken or beef",
@@ -841,7 +839,7 @@ export const recipes = [
     imgSmall: FritoPieSmall,
     title: "Frito Pie",
     description:
-      "A hearty and flavorful Tex-Mex dish, featuring Fritos topped with chili and cheese.",
+      "A flavorful Tex-Mex dish, featuring Fritos topped with chili and cheese.",
     ingredients: [
       "1 bag (9.25 oz) Fritos corn chips",
       "2 cups homemade or canned chili",
@@ -871,7 +869,7 @@ export const recipes = [
     img: Enchiladas,
     title: "Enchiladas",
     description:
-      "Tortillas filled with meat, beans, or cheese, smothered in sauce and baked to perfection.",
+      "Tortillas filled with meat, beans, or cheese, smothered in sauce.",
     ingredients: [
       "8 corn tortillas",
       "2 cups cooked and seasoned shredded chicken, beef, or beans",
@@ -906,8 +904,7 @@ export const recipes = [
     id: 25,
     img: Tacos,
     title: "Tacos",
-    description:
-      "A Tex-Mex version of tacos, featuring seasoned ground beef and classic toppings.",
+    description: "A Tex-Mex version of tacos, featuring seasoned ground beef.",
     ingredients: [
       "1 lb ground beef",
       "1 packet taco seasoning mix",

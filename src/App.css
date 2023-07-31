@@ -25,7 +25,8 @@ a {
 }
 
 .recipe-type-title,
-.category-title {
+.category-title,
+.might-like-title {
   color: #b22c23;
 }
 .recipe-type-title:hover {

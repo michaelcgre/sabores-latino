@@ -51,13 +51,13 @@ const WeeklyFavorites = () => {
                     <FontAwesomeIcon className="clock-icon" icon={faClock} />
                     {recipe.time}
                   </span>
-                  <a href="/" className="btn">
+                  <button className="btn fw-bold">
                     Make now!
                     <FontAwesomeIcon
                       className="arrow-icon"
                       icon={faArrowRight}
                     />
-                  </a>
+                  </button>
                 </div>
               </CardBody>
             </div>
