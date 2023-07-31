@@ -13,22 +13,25 @@ const Drinks = () => {
   const drinkRecipes = useSelector(selectDrinkRecipes);
   const firstThreeRecipes = drinkRecipes.slice(0, 3);
 
-  const [toggle, setToggle] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
-  const fade = useSpring({
-    opacity: toggle ? 1 : 0,
-    config: { duration: 1000 },
-  });
-
   useEffect(() => {
     if (inView) {
-      setToggle(true);
+      setTimeout(() => {
+        setToggle(true);
+      }, 100);
     }
   }, [inView]);
+
+  const [toggle, setToggle] = useState(false);
+
+  const fade = useSpring({
+    opacity: toggle ? 1 : 0,
+    config: { duration: 1500 },
+  });
 
   if (!drinkRecipes) {
     return <div>No recipes found!</div>;
@@ -46,12 +49,12 @@ const Drinks = () => {
         </Col>
       </Row>
       <Row>
-        {firstThreeRecipes.map((recipe) => (
+        {firstThreeRecipes.map((recipe, index) => (
           <Col
             key={recipe.id}
             className="d-flex justify-content-around align-items-center"
           >
-            <animated.div style={fade} ref={ref}>
+            <animated.div style={fade} ref={index === 0 ? ref : undefined}>
               <RecipeCard key={recipe.id} recipe={recipe} />
             </animated.div>
           </Col>

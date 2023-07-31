@@ -66,13 +66,25 @@ const Footer = () => {
           </Col>
           <Col className="d-flex justify-content-center align-items-center flex-column mt-4 mt-md-0">
             <div className="d-flex justify-content-center align-items-center fs-2 gap-4 mt-3">
-              <a href="/" className="footer-icon">
+              <a
+                href="https://www.facebook.com/"
+                target="blank"
+                className="footer-icon"
+              >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
-              <a href="/" className="footer-icon">
+              <a
+                href="https://www.instagram.com/"
+                target="blank"
+                className="footer-icon"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="/" className="footer-icon">
+              <a
+                href="https://twitter.com/"
+                target="blank"
+                className="footer-icon"
+              >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </div>
