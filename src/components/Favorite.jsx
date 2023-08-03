@@ -14,7 +14,7 @@ const Favorite = () => {
   }
 
   return (
-    <div className=" favorite-wrapper d-flex align-items-end">
+    <div className=" favorite-wrapper d-flex align-items-end justify-content-center">
       <Link
         to={`/recipes/${favoriteRecipe.id}`}
         className="text-decoration-none favorite-link"
